@@ -1,1 +1,1 @@
-export const SOCKET_URL = 'https://realtimetracker-backend.onrender.com';
+export const SOCKET_URL = import.meta.env.MODE === 'development' ? 'http://localhost:3001' : 'https://realtimetracker-backend.onrender.com'
